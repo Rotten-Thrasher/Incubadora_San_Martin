@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/altacli','clientesinc@altaclientes');
+
+Route::POST('/guardarcli','clientesinc@guardaclientes')->name('guardamaestros');
+
+Route::get('/altainc','incubadora@altaincu');
+
+Route::POST('/guardainc','incubadora@guardainc')->name('guardamaestros');
