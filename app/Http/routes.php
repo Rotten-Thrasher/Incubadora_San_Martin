@@ -30,3 +30,8 @@ Route::POST('/guardainc','incubadora@guardainc')->name('guardainc');
 Route::get('/altausu','usuario@altausu');
 
 Route::POST('/guardausu','usuario@guardausu')->name('guardausu');
+
+//Rutas huevos
+Route::get('/altahuev','huevo@altahuev');
+
+Route::POST('/guardahuev','huevo@guardahuev')->name('guardahuev');
