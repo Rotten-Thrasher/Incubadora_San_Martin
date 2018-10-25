@@ -15,10 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//Rutas Clientes
 Route::get('/altacli','clientesinc@altaclientes');
 
-Route::POST('/guardarcli','clientesinc@guardaclientes')->name('guardamaestros');
+Route::POST('/guardarcli','clientesinc@guardarcli')->name('guardarcli');
 
+//Rutas Incubadora
 Route::get('/altainc','incubadora@altaincu');
 
-Route::POST('/guardainc','incubadora@guardainc')->name('guardamaestros');
+Route::POST('/guardainc','incubadora@guardainc')->name('guardainc');
