@@ -24,3 +24,9 @@ Route::POST('/guardarcli','clientesinc@guardarcli')->name('guardarcli');
 Route::get('/altainc','incubadora@altaincu');
 
 Route::POST('/guardainc','incubadora@guardainc')->name('guardainc');
+
+//Ruta usuario
+
+Route::get('/altausu','usuario@altausu');
+
+Route::POST('/guardausu','usuario@guardausu')->name('guardausu');
