@@ -35,3 +35,8 @@ Route::POST('/guardausu','usuario@guardausu')->name('guardausu');
 Route::get('/altahuev','huevo@altahuev');
 
 Route::POST('/guardahuev','huevo@guardahuev')->name('guardahuev');
+
+//Rutas Lotes
+Route::get('/altalote','lote@altalote');
+
+Route::POST('/guardahuev','huevo@guardahuev')->name('guardahuev');
