@@ -26,7 +26,11 @@ Route::get('/reportecli','clientesinc@reportecli');
 
 Route::get('/eliminacli /{id_cli}','clientesinc@eliminacli')->name('eliminacli');
 
-Route::get('/modificam/{id_cli}','clientesinc@modificacli')->name('modificacli');
+Route::get('/modificaclie/{id_cli}','clientesinc@modificaclie')->name('modificaclie');
+
+Route::POST('/modificacliente','clientesinc@modificacli')->name('modificacli');
+
+Route::get('/restauracli/{id_cli}','clientesinc@restauracli')->name('restauracli');
 
 
 //Rutas Incubadora
