@@ -24,6 +24,11 @@ Route::POST('/guardarcli','clientesinc@guardarcli')->name('guardarcli');
 
 Route::get('/reportecli','clientesinc@reportecli');
 
+Route::get('/eliminacli /{id_cli}','clientesinc@eliminacli')->name('eliminacli');
+
+Route::get('/modificam/{id_cli}','clientesinc@modificacli')->name('modificacli');
+
+
 //Rutas Incubadora
 Route::get('/altainc','incubadora@altaincu');
 
