@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/ejemplo','lote@ejemplo');
+
 //Rutas Clientes
 Route::get('/altacli','clientesinc@altaclientes');
 
@@ -39,4 +41,4 @@ Route::POST('/guardahuev','huevo@guardahuev')->name('guardahuev');
 //Rutas Lotes
 Route::get('/altalote','lote@altalote');
 
-Route::POST('/guardahuev','huevo@guardahuev')->name('guardahuev');
+Route::POST('/guardalote','lote@guardalote')->name('guardahuev');
