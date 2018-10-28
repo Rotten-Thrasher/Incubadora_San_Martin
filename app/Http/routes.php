@@ -22,6 +22,8 @@ Route::get('/altacli','clientesinc@altaclientes');
 
 Route::POST('/guardarcli','clientesinc@guardarcli')->name('guardarcli');
 
+Route::get('/reportecli','clientesinc@reportecli');
+
 //Rutas Incubadora
 Route::get('/altainc','incubadora@altaincu');
 
