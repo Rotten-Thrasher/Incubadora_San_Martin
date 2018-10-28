@@ -32,6 +32,8 @@ Route::POST('/modificacliente','clientesinc@modificacli')->name('modificacli');
 
 Route::get('/restauracli/{id_cli}','clientesinc@restauracli')->name('restauracli');
 
+Route::get('/efisicacli/{id_cli}','clientesinc@efisicacli')->name('efisicacli');
+
 
 //Rutas Incubadora
 Route::get('/altainc','incubadora@altaincu');
