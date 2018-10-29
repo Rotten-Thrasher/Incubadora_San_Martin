@@ -57,6 +57,19 @@ Route::get('/eliminausu/{id_usu}','usuario@eliminausu')->name('eliminausu');
 Route::get('/altainc','incubadora@altaincu');
 
 Route::POST('/guardainc','incubadora@guardainc')->name('guardainc');
+    
+Route::get('/reporteinc','incubadora@reporteinc');
+
+Route::get('/desactivausu /{id_usu}','usuario@desactivausu')->name('desactivausu');
+
+Route::get('/modificausu/{id_usu}','usuario@modificausu')->name('modificausu');
+
+Route::POST('/modificausuario','usuario@modificausuario')->name('modificausuario');
+
+Route::get('/restaurausu/{id_usu}','usuario@restaurausu')->name('restaurausu');
+
+Route::get('/eliminausu/{id_usu}','usuario@eliminausu')->name('eliminausu');
+
 
 //Rutas huevos
 Route::get('/altahuev','huevo@altahuev');
