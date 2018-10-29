@@ -60,15 +60,15 @@ Route::POST('/guardainc','incubadora@guardainc')->name('guardainc');
     
 Route::get('/reporteinc','incubadora@reporteinc');
 
-Route::get('/desactivausu /{id_usu}','usuario@desactivausu')->name('desactivausu');
+Route::get('/desactivainc /{id_incubadora}','incubadora@desactivainc')->name('desactivainc');
 
-Route::get('/modificausu/{id_usu}','usuario@modificausu')->name('modificausu');
+Route::get('/modificain/{id_incubadora}','incubadora@modificain')->name('modificain');
 
-Route::POST('/modificausuario','usuario@modificausuario')->name('modificausuario');
+Route::POST('/modificaincu','incubadora@modificaincu')->name('modificaincu');
 
-Route::get('/restaurausu/{id_usu}','usuario@restaurausu')->name('restaurausu');
+Route::get('/restaurainc/{id_incubadora}','incubadora@restaurainc')->name('restaurainc');
 
-Route::get('/eliminausu/{id_usu}','usuario@eliminausu')->name('eliminausu');
+Route::get('/efisicainc/{id_incubadora}','incubadora@efisicainc')->name('efisicainc');
 
 
 //Rutas huevos
