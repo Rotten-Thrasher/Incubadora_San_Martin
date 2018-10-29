@@ -34,17 +34,19 @@ Route::get('/restauracli/{id_cli}','clientesinc@restauracli')->name('restauracli
 
 Route::get('/efisicacli/{id_cli}','clientesinc@efisicacli')->name('efisicacli');
 
-
-//Rutas Incubadora
-Route::get('/altainc','incubadora@altaincu');
-
-Route::POST('/guardainc','incubadora@guardainc')->name('guardainc');
-
 //Ruta usuario
 
 Route::get('/altausu','usuario@altausu');
 
 Route::POST('/guardausu','usuario@guardausu')->name('guardausu');
+
+Route::get('/reporteusu','usuario@reporteusu');
+
+
+//Rutas Incubadora
+Route::get('/altainc','incubadora@altaincu');
+
+Route::POST('/guardainc','incubadora@guardainc')->name('guardainc');
 
 //Rutas huevos
 Route::get('/altahuev','huevo@altahuev');
