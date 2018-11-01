@@ -70,13 +70,36 @@ Route::get('/restaurainc/{id_incubadora}','incubadora@restaurainc')->name('resta
 
 Route::get('/efisicainc/{id_incubadora}','incubadora@efisicainc')->name('efisicainc');
 
-
 //Rutas huevos
 Route::get('/altahuev','huevo@altahuev');
 
 Route::POST('/guardahuev','huevo@guardahuev')->name('guardahuev');
 
+Route::get('/reportehuevo','huevo@reportehuevo');
+
+Route::get('/desactivahu /{id_especie}','huevo@desactivahu')->name('desactivahu');
+
+Route::get('/modificahu/{id_especie}','huevo@modificahu')->name('modificahu');
+
+Route::POST('/modificahuevo','huevo@modificahuevo')->name('modificahuevo');
+
+Route::get('/restaurahu/{id_especie}','huevo@restaurahu')->name('restaurahu');
+
+Route::get('/efisicahu/{id_especie}','huevo@efisicahu')->name('efisicahu');
+
 //Rutas Lotes
 Route::get('/altalote','lote@altalote');
 
 Route::POST('/guardalote','lote@guardalote')->name('guardahuev');
+
+Route::get('/reportelote','lote@reportelote');
+
+Route::get('/desactivalot /{id_lote}','lote@desactivalot')->name('desactivalot');
+
+Route::get('/modificalote/{id_lote}','lote@modificalote')->name('modificalote');
+
+Route::POST('/modificalot','lote@modificalot')->name('modificalot');
+
+Route::get('/restauralot/{id_lote}','lote@restauralot')->name('restauralot');
+
+Route::get('/eliminalote/{id_lote}','lote@eliminalote')->name('eliminalote');
